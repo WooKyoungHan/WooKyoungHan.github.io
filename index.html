@@ -75,6 +75,29 @@
         height: auto;
         max-height: 300px;
       }
+
+      .responsive-row {
+        table-layout: auto !important;
+      }
+
+      .responsive-row,
+      .responsive-row tbody,
+      .responsive-row tr,
+      .responsive-row td {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+      }
+
+      .responsive-row td {
+        padding: 10px 0 !important;
+        text-align: left;
+      }
+
+      .responsive-row .one {
+        margin: 10px auto !important;
+      }
     }
   </style>
 </head>
@@ -147,7 +170,7 @@
             <heading>Publications</heading>
           </button>
           <div id="content-research" class="collapse in">
-            <table
+            <table class="responsive-row"
               style="width:100%;table-layout:fixed;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
 
@@ -270,7 +293,7 @@
             <heading>Co-authored Publications</heading>
           </button>
           <div id="content-coauthored" class="collapse in">
-            <table
+            <table class="responsive-row"
               style="width:100%;table-layout:fixed;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
 
@@ -381,7 +404,7 @@
           </button>
           <div id="content-education" class="collapse in">
 
-            <table border=0 class="bg_colour"
+            <table border=0 class="bg_colour responsive-row"
               style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
 
